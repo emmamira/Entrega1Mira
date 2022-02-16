@@ -1,0 +1,14 @@
+<p> Se buscó la cantidad de equipos: {{cantidadEquipos}} </p>
+
+{% if ligas %}
+
+<ul>
+{% for liga in ligas %}
+    <li> {{liga.nombre}}
+    <li> {{liga.cantidadEquipos}}
+
+{% endfor %}
+
+<ul>
+
+{% endif %}
